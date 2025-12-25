@@ -57,6 +57,7 @@ function animate() {
 
 	cube.rotation.x += 0.01;
 	cube.rotation.y += 0.01;
+	cube.material.color.setHSL((Date.now() * 0.0005) % 1, 1, 0.5);
 
 	renderer.render(scene, camera);
 }
